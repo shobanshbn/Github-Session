@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <title>ABOUT ME</title>
+            <link rel="stylesheet" href="Aboutme.css" type="text/css">
+            <link rel="icon" href="images.png" type="image/x-icon">
+</head>
+    <body>
+        <h1>ABOUT ME</h1>
+        <img src="sk.png" alt="My Picture" title="My Picture" width="100" height="100">
+        <br>
+        <figure><img src="sk2.png" alt="My Picture" title="My Picture" width="100" height="100" loading="lazy">
+            <figcaption>YOUTUBE THUMBNAIL</figcaption>
+        </figure>
+
+
+        <figure>
+                <figcaption>Example of Code!</figcaption>
+                <code>&lt;h1&gt;Hello World...!&gt;h1&gt;</code>
+        </figure>
+        
+        <hr>
+        <p> <ul>
+            <li><a href="#pi">Personal Information </a></li>
+            <li><a href="#ei">Education Information</li></a>
+            <li><a href="#contact">Contact Me</li></a>
+            <li>Experince</li>
+        </ul></p>
+        <hr>
+
+        <section id="pi">
+        <h2>PERSONAL INFORMATION</h2>
+        <p><ul><li>I am Shoban Veera Varman</li></P>
+        <p><li>I am from Dindigul</li></P> 
+        <p><li>I completed my BE in Arunai College if Engineering Tiruvannamalai</li></P>
+        </section></ul>
+
+        <hr>
+        <section id="ei">
+        <h2>EDUCATION INFORMATION</h2>
+    </section>
+
+
+<table>
+    <caption>MY DAILY SCHEDULE</caption>
+        <THEAD>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">TIME</th>
+            <th scope="col">ACTIVITY</th>
+         </THEAD>
+    <tbody>
+        <tr>
+            <th scope="row">Morning</th>
+            <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+            </td>
+            <td>Write a code for HTML</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <th scope="row">Afternoon</th>
+            <td><time datetime="12:00">12pm</time>-<time datetime="06:00">6pm</time>
+            </td>
+            <td>Study Time</td>
+        </tr>
+        <tr>
+            <th scope="row">Eveining</th>
+            <td rowspan="2">All Other Time</td>
+            <td>Free Time</td>
+        </tr>
+    <tr>
+        <th scope="row">Night</th>
+        <td>Sleeping</td>
+    </tr>
+</tbody>
+
+
+<tfoot><tr>
+    <th colspan="3"> This is what I do daily</th>
+</tr></tfoot>
+</table>
+    <hr>
+       
+        <fieldset>
+
+        <article id="contact">
+                <h2>Contact Me:</h2>
+                <p>I would Like to here from You</p>
+                <form action="https://httpbin.org/get", method="get">
+                   <p>
+                    <label for="FirstName">First Name :</label>
+                    <input type="text" name="FirstName" id="FirstName" placeholder="FirstName" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="LastName">Last Name :</label>
+                    <input type="text" name="LastName" id="LastName" placeholder="LastName" autocomplete="on" required>
+                </p> 
+                    
+                <p>
+                    <label for="Password">Password :</label>
+                    <input type="password" name="Password" id="Password" placeholder="Enter Passsword"  required>
+                </p> 
+                <p>
+                    <label for="Phone">Phone No :</label>
+                    <input type="tel" name="Phone" id="Phone" placeholder="Enter Your Phone Number" pattern="[0-9]{5}-[0-9]{5}" required>
+                </p> 
+                <p>
+                    <label for="decade"> Year of Experince :</label>
+                    <input type="number" name="decade" id="decade" placeholder="Experience"  min="1950" max="2025" value="1980" step="10">
+                </p> 
+                
+                <p>
+                    <label for="content"> Fav Colour :</label>
+                    <select name="content" id="content">
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                    <option value="Green"selected>Green</option>
+                    <option value="Black">Black</option>
+
+                    </select>
+                </p> 
+                <p>
+                    <label for="content">Fav Colour :</label>
+                    <input type="text" name="content" id="content" list="content-list">
+                    <datalist id="content-list">
+                    <option value="Blue">
+                    <option value="Red">
+                    <option value="Green">
+                    <option value="Black">
+                </p>           
+                </form>
+        </article>
+    </fieldset>
+    <fieldset>
+        <legend>Fav Food</legend>
+             <input type="checkbox" name="Food" id="chicken" value="chicken">
+             <label for="chicken">Chicken</label>
+             <input type="checkbox" name="Food" id="Mutton" value="Mutton">
+             <label for="Mutton">Mutton</label>
+             <input type="checkbox" name="Food" id="Fish" value="Fish">
+             <label for="Fish">Fish</label>
+             <input type="checkbox" name="Food" id="others" value="others">
+             <label for="others">Others</label>
+    </fieldset>
+    <fieldset>
+        <legend>Fav Pet</legend>
+             <input type="radio" name="pet" id="Dog" value="Dog">
+             <label for="Dog">Dog</label>
+             <input type="radio" name="pet" id="Cat" value="Cat">
+             <label for="Cat">Cat</label>
+             <input type="radio" name="pet" id="Others" value="Others">
+             <label for="Others">Others</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Send me a Note</legend>
+        <label for="Message">Your Message</label>
+        <p>
+        <textarea name="message" id="message" cols="60" rows="5" placeholder="Type Your Message Here" >
+
+        </textarea>
+    </p>
+    </fieldset>
+    <br>
+    <button type="submit">SUBMIT</button>
+    <button type="Reset"> RESET</button>
+
+
+
+
+
+
+
+
+
+<hr>
+            <p><a href="#">Back to Top</a></p>
+    </body>
+ </html>
